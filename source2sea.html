@@ -337,6 +337,18 @@
           return marker;}
       });
         geojsonLayerPoints21.addTo(map);
+        
+        var geojsonLayerPoints21a = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/marinespatialviz/whalecompany/master/points21a.geojson", {
+        pointToLayer: function(feature,yx){
+          var marker = new L.marker(yx, {
+            icon: L.AwesomeMarkers.icon({
+              icon: 'fa-21',
+              markerColor: 'blue',
+              prefix: 'fa'})});
+          marker.bindPopup(feature.properties.Event)
+          return marker;}
+      });
+        geojsonLayerPoints21a.addTo(map);
 
 
 // full screen
