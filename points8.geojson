@@ -1,8 +1,1 @@
-{
-"type": "FeatureCollection",
-"name": "8",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "y": 51.689667, "x": -1.678097, "date": 8 }, "geometry": { "type": "Point", "coordinates": [ -1.678097, 51.689667 ] } }
-]
-}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Event":"Trout Inn, Lechlade to Rushey Lock campsite – (15.4km) – ATB Shop SUP club / SUP Gloucester"},"geometry":{"type":"Point","coordinates":[-1.678097,51.689667]}}]}
