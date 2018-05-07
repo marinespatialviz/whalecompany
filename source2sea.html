@@ -88,6 +88,11 @@
           font-weight: bold;
           content: '14';
       }
+      .fa-15:before {
+          font-family: Courier;
+          font-weight: bold;
+          content: '15';
+      }
     </style>
 
   </head>
@@ -218,6 +223,18 @@
           return marker;}
       });
         geojsonLayerPoints14.addTo(map);
+        
+        var geojsonLayerPoints15 = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/marinespatialviz/whalecompany/master/points15.geojson", {
+        pointToLayer: function(feature,yx){
+          var marker = new L.marker(yx, {
+            icon: L.AwesomeMarkers.icon({
+              icon: 'fa-15',
+              markerColor: 'blue',
+              prefix: 'fa'})});
+          marker.bindPopup(feature.properties.Event)
+          return marker;}
+      });
+        geojsonLayerPoints15.addTo(map);
 
 // full screen
           map.addControl(new L.Control.Fullscreen());
